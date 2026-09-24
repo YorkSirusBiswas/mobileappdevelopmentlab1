@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Binding UI views
         val mainLayout = findViewById<LinearLayout>(R.id.mainLayout)
         val tvDisplay = findViewById<TextView>(R.id.tvDisplay)
         val btnChangeText = findViewById<Button>(R.id.btnChangeText)
