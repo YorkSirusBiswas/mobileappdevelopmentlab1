@@ -1,4 +1,3 @@
-//Code for revert
 package com.example.mobileappdevelopmentlab1
 
 import android.graphics.Color
@@ -13,20 +12,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Binding UI views
         val mainLayout = findViewById<LinearLayout>(R.id.mainLayout)
         val tvDisplay = findViewById<TextView>(R.id.tvDisplay)
         val btnChangeText = findViewById<Button>(R.id.btnChangeText)
         val btnChangeColor = findViewById<Button>(R.id.btnChangeColor)
         val btnChangeBg = findViewById<Button>(R.id.btnChangeBg)
 
+        // Step 4: Change text on click
         btnChangeText.setOnClickListener {
             tvDisplay.text = "Hello from MADT Lab 1!"
         }
 
+        // Step 7: Change text color on click
         btnChangeColor.setOnClickListener {
             tvDisplay.setTextColor(Color.RED)
         }
 
+        // Step 10: Change layout background color on click
         btnChangeBg.setOnClickListener {
             mainLayout.setBackgroundColor(Color.LTGRAY)
         }
